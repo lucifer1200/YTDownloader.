@@ -1,140 +1,40 @@
 <!DOCTYPE html>
-
-<html b:css='false' b:responsive='true' expr:dir='data:blog.languageDirection' lang='en-US' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-    <head>
-
-    <!-- Bulletprofit - Ad Display Code -->
-<script data-cfasync="false" async type="text/javascript" src="//bulletprofitpop.com/display/items.php?48840&3869&0&0&4&9"></script>
-<!-- Bulletprofit - Ad Display Code -->
-
-
-<!-- Bulletprofit - Ad Display Code -->
-<div id="adm-container-48839"></div><script data-cfasync="false" async type="text/javascript" src="//bulletprofitads.com/display/items.php?48839&3869&970&90&4&0&42"></script>
-<!-- Bulletprofit - Ad Display Code -->
-
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-         <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script>
-	function copyScript(element) {
-                var copyText = document.getElementById(element);
-                copyText.select();
-                document.execCommand("copy");
-}
-</script>
-
-<script type="text/javascript"> 
-    function validate() { 
-        var url = document.getElementById("url").value; 
-        var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; 
-        if (pattern.test(url)) { 
-            alert("Url is valid"); 
-            return true; 
-        }  
-            alert("Url is not valid!"); 
-            return false; 
- 
-    } 
-</script> 
-
- <script> 
-        function countWords() { 
-  
-            // Get the input text value 
-            var text = document 
-                .getElementById("full_article").value; 
-  
-            // Initialize the word counter 
-            var numWords = 0; 
-  
-            // Loop through the text 
-            // and count spaces in it  
-            for (var i = 0; i < text.length; i++) { 
-                var currentCharacter = text[i]; 
-  
-                // Check if the character is a space 
-                if (currentCharacter == " ") { 
-                    numWords += 1; 
-                } 
-            } 
-  
-            // Add 1 to make the count equal to 
-            // the number of words  
-            // (count of words = count of spaces + 1) 
-            numWords += 1; 
-  
-            // Display it as output 
-            document.getElementById("show") 
-                .innerHTML = numWords; 
-        } 
-    </script> 
-
-
-
-
-
-
-        
-
-
-
-
-    </head>
-    <body>
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Tech Hub Tools</a>
-    <right><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-      
-      </form>
-    </div>
-  </div>
-</nav>
-</right>
-      <br><center><h1>Free Youtube Video and Mp3 Downloader</h1></center>
-<br><br>
-
-
-<center>
-<div dir="ltr" style="text-align: left;" trbidi="on">
-<div style="text-align: center;">
-<b><!-- Bulletprofit - Ad Display Code -->
-<div id="adm-container-48839"></div><script data-cfasync="false" async type="text/javascript" src="//bulletprofitads.com/display/items.php?48839&3869&970&90&4&0&42"></script>
-<!-- Bulletprofit - Ad Display Code -->
-</b></div>
-</div>
-</center>
-
-<br>
-
-<iframe src="https://mp3downy.com/MP3-converter?apikey=1234567890&color=17a2b8&bg=ffffff"
- style="width:100%;min-height:250px;height:auto;" ></iframe> 
-
-        <src="" async defer>
-<br>
-<br>
-<br>
-
-
-              <footer class="bg-light text-center text-lg-start">
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2020 Copyright:
-    <a class="text-dark" href="https://www.instagram.com/__techhub__/">Tech Hub</a>
-  <a href="https://www.instagram.com/__techhub__/">       
-  </div>
-  <!-- Copyright -->
-</footer>
+<html>
+  <head>
+    <title>Node.js Send Email</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body style="background-image: radial-gradient(blue,white);">
+      <div class="container">
+          <h1 class="text-center">
+            <br>
+              Node.js Send Email With Attachment
+          </h1>
+          <br>
+          <form action="/sendemail" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input class="form-control" type="email" name="to" required placeholder="To:">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="subject" placeholder="Subject:" required id="">
+            </div>
+            <div class="form-group">
+                <textarea required class="form-control" name="body" id="" cols="30" rows="10" placeholder="Body:"></textarea>
+            </div>
+            <label for="attachment">Attachment:</label>
+            <div class="form-group">
+                <input type="file" required class="form-control" name="image" id="">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block btn-danger">
+                    Send Message
+                </button>
+            </div>
+        </form>
+      </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
